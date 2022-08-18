@@ -1,0 +1,1037 @@
+:root{
+    --main-radius:5px;
+    --main-padding:5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(./img/pexels-fwstudio-164005.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 0.1fr 0.4fr 0.4fr 0.4fr;
+    grid-template-rows: 0.2fr 1.2fr 1.2fr 0.2fr;
+    grid-template-areas: "nav nav nav nav""sidebar main main main""sidebar content1 content2 content3""sidebar footer footer footer";
+    grid-gap: 0.5rem;
+    font-family: serif;
+}
+.navlink ul{
+    display: flex;
+    list-style-type: none;
+}
+.navlink li a{
+    text-decoration: none;
+    color: #000;
+    margin: 0 15px;
+}
+nav{
+    background-color: #FFDCAE;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    justify-content: space-between;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    box-shadow: 1px 2px 10px black;
+}
+main{
+    grid-area: main;
+}
+.main{
+    width: 1130px;
+    padding: 100px 0px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.swiper{
+    width: 530px;
+    height: 297px;
+    box-shadow: 1px 2px 10px black;
+
+}
+.swiper-slide img{
+    width: 530px;
+    
+
+}
+.about-text{
+    width: 550px;
+}
+.about-text h1{
+    color: #000957;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+.about-text h2{
+    color: #344CB7;
+    letter-spacing: 2px;
+    font-size: 20px;
+    margin-bottom: 1px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-family: bold;
+    margin: 0 2px;
+    font-size: 18px;
+
+}
+#sidebar h1{
+    font-size: 20px;
+    text-transform: uppercase;  
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding:20px;
+}
+#sidebar ul li {
+    margin: 25px 0;
+
+}
+#sidebar ul li a{
+    color: black;
+    text-decoration: none;
+    padding: 0 30px;
+}
+#sidebar ul li a:hover{
+    color: #000;
+    margin-left: 20px;
+    transition: 0.4s;
+}
+#sidebar {
+    background-color: #FFDCAE;
+    grid-area: sidebar;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+    box-shadow: 1px 2px 10px black;
+}
+#content1{
+    /*background-color: #BABD42;*/
+    grid-area: content1;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content2{
+    /*background-color: aquamarine;*/
+    grid-area: content2;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#content3{
+    /*background-color: blueviolet;*/
+    grid-area: content3;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+footer{
+    /*background-color: aqua;*/
+    grid-area: footer;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    
+}
+
+.boxyoutube{
+    background-color: #FFDCAE;
+    text-align: center;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px black;
+}
+
+.boxyoutube img{
+    height: 70px;
+}
+
+.boxyoutube h1{
+    color: #000;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.boxyoutube p{
+    color: #000;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.btn {
+    color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+    font-size: 17px;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+.btn:hover{
+    transform: scale(1.03);
+    box-shadow: 0 10px 15px rgb(0, 0, 0);
+    transition:  all 0.4s ease;
+}
+
+.boxdiscord {
+    background-color: #FFDCAE;
+    text-align: center;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px black;
+}
+
+.boxdiscord h1{
+    color: #000;
+    padding: 19px 0;
+    font-size: 20px;
+}
+
+.boxdiscord p{
+    color: #000;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.boxdiscord img{
+    height: 50px;
+    margin-top: 10px;
+}
+
+.boxfacebook img{
+    height: 60px;
+    margin-top: 7px;
+}
+
+.boxfacebook {
+    background-color: #FFDCAE;
+    text-align: center;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px black;
+}
+
+.boxfacebook h1{
+    color: #000;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.boxfacebook p{
+    color: #000;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1px;
+}
+
+.footer h3{
+    margin-bottom: 4px;
+
+}
+
+.footerline{
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.footerline small{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.socialmedia i{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+/*CONTACT DESIGN*/
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+
+.contact h1{
+    margin: 100px 0;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-container form{
+    border-radius: 10px;
+    background-color: #FFDCAE;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-container form input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.contact-container form textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 300px;
+}
+
+.contact-container button{
+    border: none;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+.contact-container #erorr_message{
+    margin-bottom: 20px;
+    padding: 0px;
+    background: rgb(255, 35, 35);
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+}
+/*YOUTUBE LINK*/
+
+.youtube-container{
+    max-width: 970px;
+    overflow: hidden;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.youtube-container .youtube-card{
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    transition:  all 1s ease;
+}
+#two:checked ~ .youtube-card{
+    margin-left: -100%;
+}
+.youtube-card .cards{
+    width: calc(100% / 2.2 - 10px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+    flex-wrap: wrap;
+
+}
+
+.youtube-card .cards .card{
+    background: #FFDCAE;
+    width: calc(100% / 2.2 - px);
+    padding: 20px;
+    height: 300px;
+    border-radius: 24px;
+    transition:  all 0.4s ease;
+    margin: 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.youtube-card .cards .card:hover{
+    transform: translateY(-15px);
+}
+
+.body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .card .youtube-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards .card .youtube-content .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    background: #FFDCAE;
+}
+
+.card .youtube-content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #FFDCAE;
+    padding: 3px;
+    border: 3px solid red;
+}
+.card .youtube-content .youtube-detail .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .youtube-content .youtube-detail .job{
+    font-size: 15px;
+    color: red;
+}
+.card .youtube-content .media-icons{
+    display: flex;
+}
+
+.card .youtube-content .media-icons a{
+    height: 35px;
+    width: 35px;
+    color: red;
+    background: white;
+    margin: 0 4px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 13px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.card .youtube-content .media-icons a:hover{
+    border-color: white;
+    color: white;
+    background: #FFDCAE;
+}
+
+.youtube-button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.youtube-button label{
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    margin: 0 4px;
+    border-radius: 20%;
+    transition: all 0.5s ease;
+}
+
+.youtube-button label.active{
+    width: 35px;
+}
+
+#one:checked ~ .youtube-button label.one{
+    width: 35px;
+}
+#two:checked ~ .youtube-button label.two{
+    width: 35px;
+}
+#two:checked ~ .youtube-button label.one{
+    width: 15px;
+}
+#one:checked ~ .youtube-button label.two{
+    width: 15px;
+}
+input[type="radio"]{
+    display: none;
+}
+
+
+
+
+/*FACEBOOK LINK*/
+
+.facebook-container{
+    max-width: 970px;
+    overflow: hidden;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.facebook-container .facebook-card{
+    width: 200%;
+    display: flex;
+    justify-content: space-evenly;
+    transition:  all 1s ease;
+}
+#two:checked ~ .facebook-card{
+    margin-left: -100%;
+}
+.facebook-card .cards{
+    width: calc(100% / 2.2 - 10px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+    flex-wrap: wrap;
+
+}
+
+.facebook-card .cards .card{
+    background: #FFDCAE;
+    width: calc(100% / 2.2 - px);
+    padding: 20px;
+    height: 300px;
+    border-radius: 24px;
+    transition:  all 0.4s ease;
+    margin: 2px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.facebook-card .cards .card:hover{
+    transform: translateY(-15px);
+}
+
+.body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards .card .facebook-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards .card .facebook-content .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    background: #FFDCAE;
+}
+
+.card .facebook-content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #FFDCAE;
+    padding: 3px;
+    border: 3px solid blue;
+}
+.card .facebook-content .facebook-detail .name{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card .facebook-content .facebook-detail .job{
+    font-size: 15px;
+    color: darkblue;
+}
+.card .facebook-content .media-icons{
+    display: flex;
+}
+
+.card .facebook-content .media-icons a{
+    height: 35px;
+    width: 35px;
+    color: blue;
+    background: white;
+    margin: 0 4px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 33px;
+    font-size: 13px;
+    border: 2px solid transparent;
+    transition: all 0.4s ease;
+}
+
+.card .facebook-content .media-icons a:hover{
+    border-color: white;
+    color: white;
+    background: #FFDCAE;
+}
+
+.facebook-button{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.facebook-button label{
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    margin: 0 4px;
+    border-radius: 20%;
+    transition: all 0.5s ease;
+}
+
+.facebook-button label.active{
+    width: 35px;
+}
+
+#one:checked ~ .facebook-button label.one{
+    width: 35px;
+}
+#two:checked ~ .facebook-button label.two{
+    width: 35px;
+}
+#two:checked ~ .facebook-button label.one{
+    width: 15px;
+}
+#one:checked ~ .facebook-button label.two{
+    width: 15px;
+}
+input[type="radio"]{
+    display: none;
+}
+
+/* About us*/
+.aboutme{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutme .aboutme-content img{
+    height: auto;
+    width: 600px;
+    max-width: 100% ;
+}
+
+.aboutme-text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.aboutme-content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.aboutme-text h1{
+    color: red;
+    font-size: 80px;
+    margin-top: 20px;   
+    text-transform: capitalize;
+}
+.aboutme-text h5{
+    color: #FF5B00; 
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.aboutme-text p {
+    color: #290001;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.aboutme-text a{
+    background-color: #FFDCAE;
+    color: black;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.aboutme-text a:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #FFDCAE;
+    color: white;
+    transition: .4s;
+    cursor: pointer;
+
+    
+}
+
+/*-------------------YOURSELF-----------------*/
+.yourself{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.yourself .yourself-content img{
+    height: auto;
+    width: 500px;
+    max-width: 100% ;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 100px;
+    background: #fff;
+}
+
+.yourself-text{
+    width: 550px;
+    max-width: 100%;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.yourself-content{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.yourself-text h1{
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    margin-top: 20px;   
+    text-transform: capitalize;
+}
+.yourself-text h5{
+    color: #7b0000; 
+    font-size: 25px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+.yourself-text p {
+    color: #000000;
+    font-size: 20px;
+    background-image: url(./yourselfimg/vintage-style-lined-paper-template-design-02556ffc8666eb7b2c0316aefb872be0_screen.jpg);
+    padding: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 100px;
+    border-radius: 20px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 45px;
+}
+
+.yourself-text a{
+    background-color: #FFDCAE;
+    color: black;
+    border: 2px solid transparent;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.yourself-text a:hover{
+    transform: scale(1.2);
+    background-color: transparent;
+    border: 2px solid #FFDCAE;
+    color: white;
+    transition: .4s;
+    cursor: pointer;
+
+    
+}
+
+.success-message{
+    height:85vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success-message p{
+    font-size: 20px;
+    padding: 0 20px;
+
+}
+.success-message h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+}
+.success-message a{
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.success{
+    background-color: #FFDCAE;
+    border-radius: 20px;
+    text-align: center;
+    height: 30vh;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+/* END------------------------------------------------------------------------------------------END*/
+
+@media only screen and (max-width:800px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: "nav""sidebar""main""content1""content2""content3""footer";
+    }
+.navlink li a{
+    text-decoration: none;
+    color: #000;
+    margin: 0 3px;
+    position: relative;
+    font-size: 10px;
+    right: 4px;
+}
+nav{
+    background-color: #FFDCAE;
+    display: flex;
+    font-size: 13px;
+    align-items: center;
+    justify-content: space-between;
+    grid-area: nav;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+#sidebar ul{
+    display: flex;
+    list-style-type: none;
+
+}
+#sidebar h1{
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    text-transform: uppercase;
+    padding: 1px;
+
+}
+
+#sidebar ul li {
+    margin: 0 2.7px;
+
+}
+#sidebar ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0 1.4px;
+    font-size: 6px;
+}
+    .swiper{
+        height: 160px;
+        width: 300px;
+        position: relative;
+        right   : 11px;
+
+    }
+    .swiper-slide img{
+        height: auto;
+        width: 300px;
+
+    }
+    .main{
+        width: 400px
+        
+    }
+    .about-text h1{
+        color: black;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-bottom:1px;
+    }
+    .about-text h2{
+        color: black;
+        letter-spacing: 2px;
+        font-size: 13px;
+        margin-bottom: 10px;
+        text-transform: capitalize;
+    }
+
+    .about-text{
+        width: 200px;
+    }
+
+    .about-text p{
+        letter-spacing: 1px;
+        line-height: 18px;
+        font-size: 10px;
+        margin-bottom: 1px;
+
+}
+/*SIZE MAIN*/
+.boxyoutube p{
+    color: #000;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.boxdiscord p{
+    color: #000;
+    font-size: 9px;
+    line-height: 1.6;
+}
+
+.boxfacebook p{
+    color: #000;
+    font-size: 10.3px;
+    padding-right: 20px;
+    line-height: 1.6;
+}
+
+/*CONTACT ME*/
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+
+.contact h1{
+    margin: 20px 0;
+}
+
+.contact-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-container form{
+    border-radius: 10px;
+    background-color: #FFDCAE;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 230px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-container form input{
+    border: none;
+    outline: none;
+    padding: 4px;
+    border-radius: 8px;
+    width: 200px;
+}
+
+.contact-container form textarea{
+    padding: 10px;
+    outline: none;
+    border: none;
+    width: 200px;
+}
+
+.contact-container button{
+    border: none;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    width: 100px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+
+.yourself .yourself-content img{
+    height: 200px;
+    width: 300px;
+}
+
+}
+
+@media only screen and (max-width:768px){
+/*YOUTUBE LINK*/
+.youtube-card .cards .card{
+    width: calc(100% / 2 - 10px);
+    margin: 20px 0 10px 0;
+}
+.facebook-card .cards .card{
+    width: calc(100% / 2 - 10px);
+    margin: 20px 0 10px 0;
+}
+}
+@media only screen and (max-width:600px){
+    /*YOUTUBE LINK*/
+    .youtube-card .cards .card{
+        width: 100%;
+    }
+    .facebook-card .cards .card{
+        width: 100%;
+    }
+    .aboutme .aboutme-content img{
+        margin-bottom: 30px;
+        width: 300px;
+
+    }
+    .aboutme-text h1{
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+}
+@media only screen and (max-width:1180px){
+    .aboutme{
+        width: 100%;
+        height: auto;
+        padding: 70px 0px;
+    }
+}
